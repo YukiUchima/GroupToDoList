@@ -35,14 +35,38 @@ h3 {
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
+    min-height: 200px;
+    /* max-width: 100px; */
 }
 
-button{
+#addBtn{
     color: gray;
     font-weight: 1000;
 }
 
-button:hover{
+#addBtn:hover{
     background-color: rgb(254, 255, 173);
     font-weight: bold;
+}
+
+/* test */
+.myDiv{
+	display:none;
+    padding:10px;
+    margin-top:20px;
+}  
+#showGrocery{
+    border:1px solid red;
+}
+#showChores{
+    border:1px solid green;
+}
+#showSchool{
+    border:1px solid blue;
+}
+#showPets{
+    border:1px solid blue;
+}
+#showWork{
+    border:1px solid blue;
 }

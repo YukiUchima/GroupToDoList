@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,52 +10,91 @@
     <title>ToDo Group</title>
 </head>
 <body>
-    <h1>TO-DO LIST</h1>
+  
+  <h1>TO-DO LIST</h1>
+  <hr>
+  <div class="text-center">
+    <select id="myselection" class="text-center">
+      <option>Select To-Do List</option>
+      <option value="Grocery">Grocery List</option>
+      <option value="Chores">Chores List</option>
+      <option value="School">School List</option>
+      <option value="Pets">Pets List</option>
+      <option value="Work">Work List</option>
+    </select>
+  </div>
 
-    <div class="container">
-        <div class="row align-items-start">
-          <div class="col box text-center">
-            <h3>Grocery List</h3>
-                <input placeholder="Add to my list">  
-                <button>ADD</button>
-          </div>
-          <div class="col box text-center">
-            <h3>Chores</h3>
-                <input placeholder="Add to my list">  
-                <button>ADD</button>
-          </div>
-          <div class="col box text-center">
-            <h3>School</h3>
-                <input placeholder="Add to my list">  
-                <button>ADD</button>
-          </div>
-        </div>
-        <!-- NEXT ROW --------------------------------->
-        <br>
-        <hr>
-        <div class="row align-items-start">
-            <div class="col box text-center">
-              <h3>Pets</h3>
-                  <input placeholder="Add to my list">  
-                  <button>ADD</button>
-            </div>
-            <div class="col box text-center">
-              <h3>Work</h3>
-                  <input placeholder="Add to my list">  
-                  <button>ADD</button>
-            </div>
-            <div class="col box text-center">
-                <h3>Work</h3>
-                    <input placeholder="Add to my list">  
-                    <button>ADD</button>
-              </div>
-          </div>
+  <div id="showGrocery" class="myDiv box text-center">
+    <h3>Grocery List</h3>
+    <input type="text" placeholder="Add to my list" id="inputField">  
+    <button class="addToBtn addBtn">ADD</button>
+    <div id="toDoContainerGrocery" class="toDoList"></div>
+  </div>
+
+<!-- SHOW Chores ------------------------------------------------------->
+  <div id="showChores" class="myDiv box text-center">
+    <h3>Chores</h3>
+    <input type="text" placeholder="Add to my list" id="inputField">  
+    <button class="addToBtn addBtn">ADD</button>
+    <div id="toDoContainerChores" class="toDoList"></div>
+  </div>
+
+
+<!-- SHOW SCHOOL ------------------------------------------------------->
+  <div id="showSchool" class="myDiv box text-center">
+    <h3>School</h3>
+      <input placeholder="Add to my list">  
+      <button>ADD</button>
+  </div>
+  <div id="showPets" class="myDiv box text-center">
+    <h3>Pets</h3>
+      <input placeholder="Add to my list">  
+      <button>ADD</button>
+  </div> 
+  <div id="showWork" class="myDiv box text-center">
+    <h3>Work</h3>
+      <input placeholder="Add to my list">  
+      <button>ADD</button>
+  </div> 
+
+
+
+
+
+
+  <br>
+<div id="showGroceryList" class="myDiv">
+  <h3>Grocery List</h3>
+  <input placeholder="Add to my list">  
+  <button>ADD</button>
+
+</div>
+
+
+  <br>
+
+
+
+
+
 
     </div>
+
+
+
+
+
+    
+
+
+
+
+
 
 
     
         
     </div>
+    <script src="script.js" charset="utf-8"></script>
 </body>
 </html>
