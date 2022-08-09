@@ -20,6 +20,7 @@ body{
     font-size: 6rem;
     color: white;
     text-align: center;
+    /* font-weight: ; */
 }
 
 h3 {
@@ -27,4 +28,21 @@ h3 {
     font-size: 6rem;
     color: white;
     text-align: center;
+}
+
+.box{
+    background-color: rgb(103, 214, 239);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    color: gray;
+    font-weight: 1000;
+}
+
+button:hover{
+    background-color: rgb(254, 255, 173);
+    font-weight: bold;
 }
