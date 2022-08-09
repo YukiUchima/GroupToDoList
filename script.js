@@ -1,5 +1,5 @@
 let addBtn = document.querySelector('.addToBtn');
-let inputField = document.querySelector('#inputField');
+let inputField = document.querySelector('.inputField');
 var demovalue;
 
 
