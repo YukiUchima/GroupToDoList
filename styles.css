@@ -1,0 +1,30 @@
+body{
+    margin: 50px;
+    background: linear-gradient(90deg, rgb(230, 85, 255),rgb(139, 0, 174), rgb(3, 250, 254));
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  h1 {
+    margin: 20px;
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    margin: 20px;
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+}
