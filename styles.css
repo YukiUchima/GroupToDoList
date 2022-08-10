@@ -50,11 +50,11 @@ h3 {
 }
 
 /* test */
-.myDiv{
+/* .myDiv{
 	display:none;
     padding:10px;
     margin-top:20px;
-}  
+}   */
 #showGrocery{
     border:1px solid red;
 }
@@ -69,4 +69,8 @@ h3 {
 }
 #showWork{
     border:1px solid blue;
+}
+
+.paragraph-styling{
+    background: red;
 }

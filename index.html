@@ -13,9 +13,10 @@
   
   <h1>TO-DO LIST</h1>
   <hr>
+  <!-- SELECTION BOX with DROPDOWN -->
   <div class="text-center">
     <select id="myselection" class="text-center">
-      <option>Select To-Do List</option>
+      <option value="">Pick List</option>
       <option value="Grocery">Grocery List</option>
       <option value="Chores">Chores List</option>
       <option value="School">School List</option>
@@ -24,90 +25,18 @@
     </select>
   </div>
 
- 
-<!-- SHOW Chores TOP ------------------------------------------------------->
-  <div id="showChores" class="myDiv box text-center">
-    <h3>Chores</h3>
-    <input type="text" placeholder="Add to my list" class="inputField">  
-    <button class="addToBtn addBtn">ADD</button>
-    <div id="toDoContainerChores" class="toDoList"></div>
-  </div>
-
-
- <div id="showGrocery" class="myDiv box text-center">
-    <h3>Grocery List</h3>
-    <input type="text" placeholder="Add to my list" id="inputField">  
-    <button class="addToBtn addBtn">ADD</button>
-    <div id="toDoContainerGrocery" class="toDoList"></div>
-  </div>
-
-
-<!-- SHOW SCHOOL ------------------------------------------------------->
-  <div id="showSchool" class="myDiv box text-center">
-    <h3>School</h3>
-    <input type="text" placeholder="Add to my list" class="inputField">  
-    <button class="addToBtn addBtn">ADD</button>
-    <div id="toDoContainerSchool" class="toDoList"></div>
-  </div>
-
-
-
-
-  <div id="showPets" class="myDiv box text-center">
-    <h3>Pets</h3>
-    <input type="text" placeholder="Add to my list" class="inputField">  
-    <button class="addToBtn addBtn">ADD</button>
-    <div id="toDoContainerPets" class="toDoList"></div>
+  <div id="show" class="myDiv box text-center">
+      <h3 id="title-list">Choose To Do List<h3>
+      <input type="text" placeholder="Add to my list" class="inputField">
+      <button class="addToBtn">ADD</button>
+      <div id="toDoContainerSchool" class="toDoList"></div>
+      <div id="toDoContainerWork" class="toDoList"></div>
+      <div id="toDoContainerPets" class="toDoList"></div>
+      <div id="toDoContainerGrocery" class="toDoList"></div>
+      <div id="toDoContainerChores" class="toDoList"></div>
   </div> 
 
 
-
-
-  <div id="showWork" class="myDiv box text-center">
-    <h3>Work</h3>
-    <input type="text" placeholder="Add to my list" class="inputField">  
-    <button class="addToBtn addBtn">ADD</button>
-    <div id="toDoContainerWork" class="toDoList"></div>
-  </div>
-
-
-
-
-
-
-  <br>
-<div id="showGroceryList" class="myDiv">
-  <h3>Grocery List</h3>
-  <input placeholder="Add to my list">  
-  <button>ADD</button>
-
-</div>
-
-
-  <br>
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    
-        
-    </div>
     <script src="script.js" charset="utf-8"></script>
 </body>
 </html>

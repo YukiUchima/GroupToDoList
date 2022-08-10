@@ -1,37 +1,58 @@
-let addBtns = document.querySelectorAll('.addToBtn');
-let inputField = document.querySelector('.inputField');
+let addBtn = document.querySelector('.addToBtn');
+// let addBtn = document.querySelectorAll('.addToBtn2');
+let inputFields = document.querySelector('.inputField');
 var demovalue;
+let select = document.querySelector('#myselection');
+clearLists();       //hide all lists
 
+let mainList = {Grocery: [],
+                Chores: [],
+                School: [],
+                Pets: [],
+                Work: []
+    }
 
-$(document).ready(function(){
-    $('#myselection').on('change', function(){
-        demovalue = $(this).val();  //Grocery
-        $("div.myDiv").hide();
-        $("#show"+demovalue).show(); 
-    });
+select.addEventListener('change', function(e){
+    demovalue = e.currentTarget.value;  //Grocery -> val = Grocery
+    document.querySelector('#title-list').innerText = demovalue;
+    console.log(demovalue);
+    clearLists();
+    let toDoContainerName = "toDoContainer" + demovalue;
+    console.log(toDoContainerName);
+    let selectedList = document.querySelector("#" + toDoContainerName);
+    selectedList.style.display = "block";
 });
 
-for (addBtn of addBtns){
-    addBtn.addEventListener('click', function(){
-        let toDoContainer = document.querySelector('#toDoContainer'+demovalue);
-        console.log(demovalue);
-        let newItem = document.createElement('p');
-        newItem.classList.add('paragraph-styling');
-        //Take text value from inputField
-        newItem.innerText = inputField.value;
-        //Add the newItem to the container list
-        toDoContainer.appendChild(newItem);
-        //Remove item that was in the input field
-        inputField.value = "";
-    
-        //Detect when item is clicked
-        newItem.addEventListener('click', function(){
-            newItem.style.textDecoration = "line-through";
-            setTimeout(() => {
-                toDoContainer.removeChild(newItem);
-            }, 1000);
-        });
-    })
+function clearLists(){
+    let toDoListAll = document.querySelectorAll('.toDoList');
+    for(eachToDoList of toDoListAll){
+        eachToDoList.style.display = "none";
+    }
 }
 
+// mainList.groceryList.push(newitem)
 
+addBtn.addEventListener('click', function(){
+    demovalue = select.value;
+    console.log(demovalue);
+    let toDoContainer = document.querySelector('#toDoContainer'+demovalue);
+    let newItem = document.createElement('p');
+    newItem.classList.add('paragraph-styling');
+    newItem.innerText = inputFields.value;      //item we are adding ex: item1
+    mainList[demovalue].push(newItem.innerText)
+    console.log(mainList);
+    toDoContainer.appendChild(newItem);
+    inputFields.value = "";
+    // DELETE ITEMS FROM LIST
+    newItem.addEventListener('click', function(){
+        let itemIndex = mainList[demovalue].indexOf(newItem.value);
+        newItem.style.textDecoration = "line-through";
+        mainList[demovalue].splice(itemIndex, 1);
+        console.log(mainList[demovalue]);
+        console.log("After deleting: " + mainList[demovalue]);
+        setTimeout(() => {
+            toDoContainer.removeChild(newItem);
+        }, 1000);
+
+    });
+});
