@@ -66,11 +66,24 @@ h3 {
 }
 #showPets{
     border:1px solid blue;
+    background-color:rgb(254, 255, 173);
 }
 #showWork{
     border:1px solid blue;
 }
 
-.paragraph-styling{
-    background: red;
-}
+/* .paragraph-styling{
+    /* background: red; */
+} */
+
+/* #birdImage {
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+#birdImage {
+    place-items: center;
+    border: 2px;
+   }
