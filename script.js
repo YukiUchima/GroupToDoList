@@ -56,3 +56,27 @@ addBtn.addEventListener('click', function(){
 
     });
 });
+
+  // CYCLE THROUGH ICONS
+  select.addEventListener('change', function(e){
+      demovalue = e.currentTarget.value;
+      if (demovalue == 'Grocery') {
+          let icon = document.getElementById("icon");
+          icon.setAttribute("class", "fa-solid fa-cart-shopping");
+        } else if (demovalue == 'Chores') {
+          let icon = document.getElementById("icon");
+          icon.setAttribute("class", "fa-solid fa-spray-can-sparkles");
+        } else if (demovalue == 'School') {
+          let icon = document.getElementById("icon");
+          icon.setAttribute("class", "fa-solid fa-graduation-cap");
+        } else if (demovalue == 'Pets') {
+          let icon = document.getElementById("icon");
+          icon.setAttribute("class", "fa-solid fa-cat");
+       } else if (demovalue == 'Work') {
+          let icon = document.getElementById("icon");
+          icon.setAttribute("class", "fa-solid fa-briefcase");
+        }else {
+          icon.removeAttribute("class");
+      }
+    
+      });

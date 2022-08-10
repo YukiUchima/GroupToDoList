@@ -73,7 +73,7 @@ h3 {
 }
 
 /* .paragraph-styling{
-    /* background: red; */
+    /* background: red; 
 } */
 
 /* #birdImage {
@@ -86,4 +86,10 @@ h3 {
 #birdImage {
     place-items: center;
     border: 2px;
+   }
+
+.fa-solid {
+    color: dodgerblue;
+    font-size: 50px;
+    margin-bottom: 10px;
    }
