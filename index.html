@@ -17,33 +17,35 @@
   <hr>
 
   <!-- SELECTION BOX with DROPDOWN -->
-  <div class="text-center">
-    <select id="myselection" class="col-8 text-center">
-      <option value="">Pick List</option>
-      <option value="Grocery">Grocery List</option>
-      <option value="Chores">Chores List</option>
-      <option value="School">School List</option>
-      <option value="Pets">Pets List</option>
-      <option value="Work">Work List</option>
-    </select>
-  </div>
-
-  <div id="show" class="myDiv col-lg-8 box text-center">
-      <h3 id="title-list">Choose To Do List<h3>
-        <!--Jerrill's image-->
-        <div><i id ='icon'></i></div>
-      <div class="hide">
-        <input type="text" placeholder="ADD TO MY LIST" class="inputField">
-        <button class="addToBtn">ADD</button>
-      </div>
-      <div id="toDoContainerSchool" class="toDoList"></div>
-      <div id="toDoContainerWork" class="toDoList"></div>
-      <!--Tatiana's image-->
-      <div id="toDoContainerPets" class="toDoList"><br><img src="bird.jpg" alt="bird" class="d-block w-25 mx-auto d-block" id="birdImage"><br></div>
-      <!--James's Image-->
-      <div id="toDoContainerGrocery" class="toDoList"><br><img src="fruit.jpg" alt="fruit" class="d-block w-25 mx-auto d-block"><br></div>
-      <div id="toDoContainerChores" class="toDoList"></div> 
-  </div> 
+  <section class="align-self-lg-center">
+    <div class="text-center">
+      <select id="myselection" class="col-lg-8 text-center">
+        <option value="">Pick List</option>
+        <option value="Grocery">Grocery List</option>
+        <option value="Chores">Chores List</option>
+        <option value="School">School List</option>
+        <option value="Pets">Pets List</option>
+        <option value="Work">Work List</option>
+      </select>
+    </div>
+  
+    <div id="show" class="myDiv col-lg-8 box text-center">
+        <h2 id="title-list">Choose To Do List<h2>
+          <!--Jerrill's image-->
+          <div><i id ='icon'></i></div>
+        <div class="hide">
+          <input type="text" placeholder="ADD TO MY LIST" class="inputField">
+          <button class="addToBtn">ADD</button>
+        </div>
+        <div id="toDoContainerSchool" class="toDoList"></div>
+        <div id="toDoContainerWork" class="toDoList"></div>
+        <!--Tatiana's image-->
+        <div id="toDoContainerPets" class="toDoList"><br><img src="bird.jpg" alt="bird" class="d-block w-25 mx-auto d-block" id="birdImage"><br></div>
+        <!--James's Image-->
+        <div id="toDoContainerGrocery" class="toDoList"><br><img src="fruit.jpg" alt="fruit" class="d-block w-25 mx-auto d-block"><br></div>
+        <div id="toDoContainerChores" class="toDoList"></div> 
+    </div> 
+  </section>
 
 
     <script src="script.js" charset="utf-8"></script>

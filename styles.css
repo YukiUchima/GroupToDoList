@@ -21,7 +21,6 @@ h1 {
     color: white;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    /* font-weight: ; */
 }
 
 #myselection{
@@ -45,7 +44,7 @@ h3 {
 
 .box{
     background-color: rgb(103, 214, 239);
-    margin: 20px;
+    margin: 40px auto;
     padding: 10px;
     border-radius: 10px;
     min-height: 200px;
@@ -54,7 +53,7 @@ h3 {
 input[type=text], .addToBtn{
     background:linear-gradient(90deg, rgb(25, 25, 26),rgb(139, 0, 174), rgb(18, 38, 38));
     color: white;
-    max-width: 200px;
+    max-width: 400px;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -84,15 +83,11 @@ input[type=text], .addToBtn{
 
 .paragraph-styling{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: whitesmoke;
+    color: rgb(32, 32, 32);
     font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(130, 130, 130);
 } 
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
 
 /* #birdImage {
     display: block;
