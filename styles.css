@@ -1,4 +1,5 @@
 body{
+    font-family: 'Rubik Marker Hatch', cursive;
     margin: 50px;
     background: linear-gradient(90deg, rgb(230, 85, 255),rgb(139, 0, 174), rgb(3, 250, 254));
 }
@@ -15,18 +16,34 @@ body{
     clear: both;
   }
   
-  h1 {
+h1 {
     margin: 20px;
     font-size: 6rem;
     color: white;
     text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     /* font-weight: ; */
+}
+
+#myselection{
+    /* background-image: url('space.svg');
+    background-position: center;
+    background-size: cover; */
+    background-color: black;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    color: white;
+    min-height: 40px;
+    max-width: 200px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h3 {
     margin: 20px;
     font-size: 6rem;
-    color: white;
     text-align: center;
 }
 
@@ -36,25 +53,19 @@ h3 {
     padding: 10px;
     border-radius: 10px;
     min-height: 200px;
-    /* max-width: 100px; */
 }
 
-#addBtn{
-    color: gray;
-    font-weight: 1000;
-}
-
-#addBtn:hover{
-    background-color: rgb(254, 255, 173);
+input[type=text], .addToBtn{
+    background:linear-gradient(90deg, rgb(25, 25, 26),rgb(139, 0, 174), rgb(18, 38, 38));
+    color: white;
     font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    min-height: 40px;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
 }
 
-/* test */
-/* .myDiv{
-	display:none;
-    padding:10px;
-    margin-top:20px;
-}   */
 #showGrocery{
     border:1px solid red;
 }
@@ -72,20 +83,25 @@ h3 {
     border:1px solid blue;
 }
 
-/* .paragraph-styling{
-    /* background: red; 
-} */
+
+.paragraph-styling{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+} 
 
 /* #birdImage {
     display: block;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-} */
+}
 
 #birdImage {
     place-items: center;
     border: 2px;
+    opacity: 70%;
+    border-radius: ;
    }
 
 .fa-solid {
