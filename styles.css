@@ -15,38 +15,52 @@ body{
     clear: both;
   }
   
-  h1 {
+h1 {
     margin: 20px;
     font-size: 6rem;
     color: white;
     text-align: center;
-    /* font-weight: ; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#myselection{
+    background-color: black;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    color: white;
+    min-height: 40px;
+    max-width: 200px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h3 {
     margin: 20px;
     font-size: 6rem;
-    color: white;
     text-align: center;
 }
 
 .box{
     background-color: rgb(103, 214, 239);
-    margin: 20px;
+    margin: 40px auto;
     padding: 10px;
     border-radius: 10px;
     min-height: 200px;
-    /* max-width: 100px; */
 }
 
-#addBtn{
-    color: gray;
-    font-weight: 1000;
-}
-
-#addBtn:hover{
-    background-color: rgb(254, 255, 173);
+input[type=text], .addToBtn{
+    background:linear-gradient(90deg, rgb(25, 25, 26),rgb(139, 0, 174), rgb(18, 38, 38));
+    color: white;
+    max-width: 400px;
     font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    min-height: 40px;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
 }
 
 #showGrocery{
@@ -66,14 +80,30 @@ h3 {
     border:1px solid blue;
 }
 
-/* .paragraph-styling{
-    /* background: red; 
-} */
 
+.paragraph-styling{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(130, 130, 130);
+} 
+
+<<<<<<< HEAD
+=======
+/* #birdImage {
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+>>>>>>> 8306e338747ac9a6ba4111313919e0e87409cf52
 
 #birdImage {
     place-items: center;
     border: 2px;
+    opacity: 70%;
+    border-radius: ;
    }
 
 .fa-solid {
