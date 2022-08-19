@@ -32,8 +32,6 @@ function clearLists(){
 };
 
 
-// mainList.groceryList.push(newitem)
-
 addBtn.addEventListener('click', function(){
     demovalue = select.value;
     console.log(demovalue);
@@ -50,6 +48,7 @@ addBtn.addEventListener('click', function(){
     newItem.addEventListener('click', function(){
         let itemIndex = mainList[demovalue].indexOf(newItem.value);
         newItem.style.textDecoration = "line-through";
+        newItem.style.opacity = 0.4;
         mainList[demovalue].splice(itemIndex, 1);
         console.log(mainList[demovalue]);
         console.log("After deleting: " + mainList[demovalue]);
